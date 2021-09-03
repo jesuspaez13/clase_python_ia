@@ -59,7 +59,54 @@ a = 9
 r = a ** (1/2)
 print(r)
 
-import math
-r = math.sqrt(25)
-print(r)
+# import math
+# r = math.sqrt(25)
+# print(r)
+
+# Tipos de datos
+
+# String str
+a = "Hola mundo"
+a = 'Hola mundo'
+b = "I can't do it"
+c = 'Alias "Jesus"'
+
+# Entero int
+a = 5
+
+# Decimal float
+a = 5.6
+
+# Booleano bool (Importante empezar con mayuscula)
+x = True
+y = False
+
+# Conversiones entre tipos de datos
+
+# covertir de x a entero
+a = '3'
+y = int(a)
+print(y)
+print(type(y))
+
+# covertir de x a decimal
+a = '3'
+y = float(a)
+print(y)
+print(type(y))
+
+# covertir de x a string
+a = '3'
+y = str(a)
+print(y)
+print(type(y))
+
+# Concatenaciones
+a = 'Hola'
+b = 'mundo'
+c = a + ' ' + b
+
+a = 'Hola'
+b = a * 5
+
 
