@@ -109,4 +109,21 @@ c = a + ' ' + b
 a = 'Hola'
 b = a * 5
 
+# Captura por pantalla
+nombre = input('Digite su nombre: ')
+print('Hola', nombre)
+
+print('Digite su nombre: ')
+nombre = input()
+print('Hola', nombre)
+
+# Haga que sume dos numeros y muestre su resultado
+num1 = input('Digite el primer numero: ')
+num2 = input('Digite el segundo numero: ')
+suma = (num1 + num2)
+print(suma)
+
+
+
+
 
