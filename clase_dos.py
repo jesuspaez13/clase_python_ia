@@ -73,16 +73,51 @@ else:
     print('La nota ingresada no es válida')
 
 # Haga un algoritmo que diga si un numero es negativo, positivo o cero
-numero = float(input('Digite el numero: '))
+numero = float(input('Digite el número: '))
 if(numero > 0):
     print('Positivo')
 elif(numero < 0):
     print('Negativo')
 else:
-    print('El numero es cero')
+    print('El número es cero')
+
+# Ciclos
+
+# Ciclo for
+for valor in range(11):
+    print(valor)
+
+for valor in range(1, 11):
+    print(valor)
+
+for valor in range(0, 13, 3):
+    print(valor)
+
+for valor in range(11):
+    print(valor)
+print(valor + 1)
+
+# Haga un algoritmo que reciba N notas de un estudiante y calcule el
+# promedio total
+cn = int(input('Digite la cantidad de notas: '))
+if(cn > 0):
+    acumulador = 0
+    for x in range(cn):
+        nota = float(input(f'Digite la nota {x + 1}: '))
+        acumulador = acumulador + nota
+    promedio = acumulador / cn
+    # Para redondear el resultado
+    promedio = round(promedio, 2)
+    print(f'El promedio final es: {promedio}')
+else:
+    print('El numero de notas no puede ser menor o igual a cero')
 
 
-    
+
+
+
+        
+
 
 
 
