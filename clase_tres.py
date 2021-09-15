@@ -89,3 +89,79 @@ for valor in a.items():
 
 for llave, valor in a.items():
     print(f'Llave: {llave}, Valor: {valor}')
+
+# Funciones
+
+def nombre_funcion():
+    pass
+
+
+def saludar():
+    print('Hola Mundo')
+
+
+def saludar(nombre):
+    print(f'Hola {nombre}')
+
+
+# Python no permite la Sobrecarga de métodos
+
+# Parámetros Opcionales
+    
+def saludar(nombre = 'Mundo'):
+    print(f'Hola {nombre}')
+
+def saludar(nombre, apellido=""):
+    print(f'Hola {nombre} {apellido}')
+
+def saludar(nombre= "Mundo", apellido=""):
+    print(f'Hola {nombre} {apellido}')
+
+# NO puedo tener un parámetro obligatorio después de un
+# parámetro opcional
+def saludar(nombre, apellido="", segundo_apellido):
+    print(f'Hola {nombre} {apellido}')
+
+# Parámetros ilimitados
+
+def saludar(*nombres):
+        print(f'Hola {nombres}')
+
+
+def saludar(*nombres):
+    for nombre in nombres:
+        print(f'Hola {nombre}')
+
+
+def saludar(*nombres, apellido=""):
+    for nombre in nombres:
+        print(f'Hola {nombre}')
+    print(f'Apellido {apellido}')
+
+
+def saludar(*nombres, apellido):
+    for nombre in nombres:
+        print(f'Hola {nombre}')
+    print(f'Apellido {apellido}')
+
+
+def saludar(**nombres):
+    print(nombres)
+
+def resta(a, b):
+    print(a - b)
+
+def operaciones(a, b):
+    suma = a + b
+    resta = a - b
+    mult = a * b
+    div = a / b
+    return suma, resta, mult, div
+
+resultados  = operaciones(4, 5)
+
+suma, res, mul, div = operaciones(4, 5)
+
+suma, _, _, div = operaciones(4, 5)
+
+# while(condicion):
