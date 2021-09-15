@@ -84,6 +84,9 @@ else:
 # Ciclos
 
 # Ciclo for
+for _ in range(5):
+    print('Perdon')
+
 for valor in range(11):
     print(valor)
 
@@ -114,9 +117,6 @@ else:
 
 
 
-
-
-        
 
 
 
